@@ -1,0 +1,43 @@
+name: softqlearning
+
+base:
+  ubuntu: 16.04
+  opengl: runtime
+
+apt: 
+  - git make cmake unzip
+  - zlib1g-dev
+  - libglfw3-dev
+  - libxrandr2 libxinerama-dev libxi6 libxcursor-dev
+  - vim ack-grep
+  - python-pygame
+
+pip3:
+  - awscli
+  - Pillow
+  - cached-property
+  - cloudpickle
+  - mkl-service==1.1.2
+  - mkl==2017.0.4
+  - numpy==1.14.5
+  - path.py
+  - PyOpenGL
+  - six
+  - cffi
+  - cma==1.1.06
+  - flask
+  - gtimer
+  - gym[all]==0.10.8
+  - jsonmerge
+  - joblib==0.12
+  - git+https://github.com/Lasagne/Lasagne.git@a61b76fd991f84c50acdb7bea02118899b5fefe1#egg=lasagne
+  - mako
+  - matplotlib
+  - mujoco-py==1.50.1
+  - nose2
+  - git+https://github.com/plotly/plotly.py.git@2594076e29584ede2d09f2aa40a8a195b3f3fc66#egg=plotly
+  - psutil
+  - pyprind
+  - ray
+  - tensorflow==1.9.0
+
